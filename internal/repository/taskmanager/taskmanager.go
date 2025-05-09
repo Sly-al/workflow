@@ -19,7 +19,6 @@ const (
 )
 
 // Repository defines the interface for task storage operations.
-// @gtg mp-metrics
 type Repository interface {
 	AddTask(ctx context.Context, task *models.Task) (err error)
 	GetNextTask(ctx context.Context) (task *models.Task, err error)
